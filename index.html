@@ -16,35 +16,35 @@
 
 <body>
 
-    <h1>Personal Details Form</h1>
-
     <form>
 
-        <label>Name</label><br>
+        <fieldset>
 
-        <input type="text" id="name"><br><br>
+            <!-- The fieldset tag is used to group related elements in a form and draws a box around them-->
 
-        <label>Email ID</label><br>
+            <legend>Personal Information:</legend>
 
-        <input type="text" id="email"><br><br>
+            <label>Full name:</label>
 
-        <label>Contact Number (This will be hidden)</label><br>
+            <!--placeholder attribute can be used to provide extra information about entry to be made-->
 
-        <input type="password" id="contact"><br><br>
+            <input type="text" id="fname" placeholder="Enter Name"><br><br>
 
-        <label>Gender</label><br>
+            <label>Email:</label>
 
-        <input type="radio" id="female" name="gender" value="Female">Female<br>
+            <input type="text" id="email"><br><br>
 
-        <input type="radio" id="male" name="gender" value="Male">Male<br><br>
+            <label>Gender:</label><br>
 
-        <label>Favourite City</label><br>
+            <input type="radio" id="gender" value="female">Female<br>
 
-        <input type="checkbox" id="city" value="New Delhi">New Delhi<br>
+            <input type="radio" id="gender" value="male">Male<br><br>
 
-        <input type="checkbox" id="city" value="Mumbai">Mumbai<br><br>
+            <label>Birthday:</label>
 
-        <input type="submit">
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+        </fieldset>
 
     </form>
 
